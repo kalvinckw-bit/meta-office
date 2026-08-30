@@ -1,0 +1,9 @@
+{
+  "name": "voiceout-boardroom",
+  "version": "0.1.0",
+  "description": "VoiceOut 的 AI 高管團隊 —— CEO、CFO、CTO、CMO、COO 與首席顧問，隨時給社長第二意見與決策建議。",
+  "author": {
+    "name": "CK"
+  },
+  "keywords": ["voiceout", "boardroom", "advisory", "strategy", "startup"]
+}
