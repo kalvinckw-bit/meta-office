@@ -95,5 +95,6 @@
 
 ### Timestamp & Status
 - **Last Sync**: 2026-08-30
-- **Status**: In Progress — v3.0 骨架已交付，真人邀請雙向流程與帳號系統尚未完成
-- **Session closed via**: 尚未執行 `end`（本記錄為進行中更新）
+- **Status**: Completed / Safe to Resume — v3.0 骨架已交付並已 commit 到 git；真人邀請雙向流程與帳號系統尚未完成，留給下一個 session
+- **Session closed via**: `end` protocol (AI_CONTEXT/END_SESSION.md)
+- **補充**：`git init/add/commit` 已由社長（或其他流程）完成，首個 commit `b4e4a9a` 已包含本 session 所有變更。本次 `end` 額外處理：更新 REGISTRY.md 心跳、補上 handoff commit。
