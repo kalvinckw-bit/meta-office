@@ -108,3 +108,20 @@ This document records permanent architectural, design, and policy decisions appr
   4. **Cowork 六位部長 Skill 保留但脫鉤**：`/ceo` `/cfo` 等技能繼續安裝在社長帳號內（可能仍有其他用途，例如純文字諮詢），但不再是 `metaoffice.html` 的核心互動對象。是否完全移除需社長另外明確指示，AI 不得自行假設要刪除已安裝的技能。
   5. **v2.0（AI 部長版）保留歸檔，不刪除**：供對照與可能的回退需求，存放於 `docs/archive/`。
 - **Consequence**: TODO.md、CURRENT_STATUS.md 的既有任務（网域、https、麥克風/鏡頭實測）順位往後，優先權讓給「補完真人邀請流程」與「真人帳號系統」。
+
+---
+
+### Decision: Mandatory Automatic Git Pull on Start & Git Push on End (開局必 Pull 收工必 Push 鋼鐵憲法)
+- **Status**: APPROVED & MANDATORY
+- **Date**: 2026-09-02
+- **Context**: 針對部分 AI 誤以為 AI_CONTEXT 僅是本機留言板、不需要自動同步雲端的怠惰誤解，集團特此頒布鋼鐵憲法。
+- **Constitutional Rules (憲法級硬性準則)**:
+  1. **開局必 Pull（Mandatory Pull on `start`）**：
+     - 每次使用者輸入 `start` 或 AI 開始新 Session 時，AI **必須首先自動執行 `git pull --rebase`**，將 GitHub 遠端最新進度拉取至本機。嚴禁以「未要求同步雲端」為由略過！
+  2. **收工必 Push（Mandatory Push on `end`）**：
+     - 每次使用者輸入 `end` 或任務告一段落時，AI **必須自動執行 `git add -A`、`git commit` 並立即 `git push` 至 GitHub 遠端儲存庫**。
+     - **嚴禁留給使用者手動執行！嚴禁宣稱『AI_CONTEXT 沒有要求 push』！**
+  3. **雙重同步架構定位（OneDrive + GitHub）**：
+     - OneDrive 負責跨裝置（Windows ⟷ Mac）檔案即時傳輸。
+     - GitHub 負責版本歷史與多 AI 程式碼同步。
+     - **任何 AI 結束工作時未執行 `git push`，即視為嚴重失職與交接漏洞！**
