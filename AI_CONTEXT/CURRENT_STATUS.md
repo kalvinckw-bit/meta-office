@@ -18,8 +18,14 @@
 | 圖形升級（漸層/陰影/狀態環） | Completed | Inferred | 已從像素風換成 Canvas 2D 向量漸層渲染 |
 | ~~Cowork 外掛（6 位 AI 部長）~~ | Deprecated（待社長確認） | Yes（舊功能本身可動） | 部長 Skill 仍安裝在帳號內可用，但 `metaoffice.html` 已不再連結到它們；是否整個停用需社長決定 |
 | 決策紀錄 localStorage | Completed（v2.0 殘留功能，v3.0 未搬過來） | Inferred | v3.0 尚未重新加入決策紀錄區塊 |
-| 靜態託管上線 | Not started | No | 尚未選定 Cloudflare Pages / 網域 |
+| 靜態託管上線 | Deployed | ✅ Live (2026-09-02 09:02 JST) | 已部署至 christykalvin.com/metaoffice.html；Firebase Hosting (christykalvin-web site)；兩個網域均 HTTP 200 |
 | Git 版控 | **Blocked** | No | Cowork 橋接不給刪檔權限，git 無法運作；需社長手動 `git init`（見 TODO P0） |
+
+## 2.1 Latest Deployment (2026-09-02)
+- **Commit**: ChristyKalvinWeb `16676ea`
+- **URL**: https://christykalvin.com/metaoffice.html （自訂域名）/ https://christykalvin-web.web.app/metaoffice.html （web.app）
+- **Cache Policy**: `no-cache, no-store, must-revalidate` （避免看到舊畫面）
+- **Verification**: 兩網域均返回 HTTP 200，metaoffice.html v3.0 已上線可存取
 
 ## 3. Active Blockers & Critical Notes
 - **v3.0 是骨架，不是完整產品**：目前只做到「靠近會彈出打招呼邀請」。「有空嗎」的雙向同意、brief、真正視訊連線都還沒做。社長若要拿去給真人同事用，這些是硬性前提。
