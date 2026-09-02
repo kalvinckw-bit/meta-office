@@ -13,8 +13,8 @@
 - [ ] 確認 `_to_delete/` 內容確實是舊副本，然後整個資料夾刪掉（AI 沒有刪檔權限，需社長手動）。
 
 ## P2: Backlog & Enhancements
-- [ ] 決定是否購買網域：`metaboardroom.asia`（首選）／`metaboard.asia`（備選）。
-- [ ] 把 `metaoffice.html` 放上 Cloudflare Pages（免費），取得 https 網址 —— 解鎖麥克風/鏡頭真實測試的前提。
+- [ ] **【待社長購買域名】** 部署 `metaoffice.html` 到 `ck-holdings.com.my`（社長另外購買，2026-09-02 尚未下單）。需配置 Firebase Hosting site、更新 DNS、驗證 https 下麥克風/鏡頭授權。目前暫保持本機測試狀態，不急於上線。
+- [ ] ~~決定是否購買網域：`metaboardroom.asia`（首選）／`metaboard.asia`（備選）。~~ 已由社長決定用 `ck-holdings.com.my`。
 - [ ] 決策紀錄功能（v2.0 有 localStorage 版本）尚未搬到 v3.0，需重新設計成「協作記錄」而非「AI 會議決策」的語境。
 - [ ] 地圖編輯器：讓社長自己擺桌子、改樓層、加成員。
 - [ ] 手機觸控走位優化。
