@@ -111,6 +111,29 @@ This document records permanent architectural, design, and policy decisions appr
 
 ---
 
+### Decision: 美術素材採第三方像素圖磚包，自用階段用免費版（含公開前法律閘門）
+- **Status**: APPROVED
+- **Date**: 2026-09-02
+- **Context**: 社長多次要求 `metaoffice.html` 要跟 MetaLife「一模一樣」。經確認，做不到的原因**不是程式技術**，而是**美術素材**——MetaLife 的外觀是數百張professional手繪 16-bit 像素圖磚（地板花色、傢俱、角色 4 向動畫幀），用 Canvas 幾何繪圖（矩形／漸層／圓形）在原理上就不可能模仿。唯一解是導入現成的像素圖磚包。社長明確表示：現階段自用、暫不付費。
+- **Rules**:
+  1. **採用第三方圖磚包**：現階段使用 [LimeZu「Modern Interiors」16x16](https://limezu.itch.io/moderninteriors) **免費版**（`Modern_Interiors_Free_v2.2.zip`，約 1MB，素材量有限）。
+  2. **⚠️ 免費版授權限制（法律風險核心）**：LimeZu 免費版**僅授權私人用途（private use only），明文禁止商業使用**。現階段社長為自用，符合授權範圍。
+  3. **🚨 公開前硬性閘門（Legal Gate Before Going Public）**：
+     任何 AI 在協助 Meta Office 執行下列任一動作**之前**，**必須主動、明確地警告社長此授權問題並取得確認**，不得默默執行：
+     - 對外公開發布網址、開放非社長本人以外的人使用
+     - 開放他人註冊帳號
+     - 開始收費、訂閱制、或任何形式的商業化
+     - 對外行銷、宣傳、展示（含 demo 給潛在客戶看）
+     **理由**：屆時繼續使用免費版即構成授權違約，有被權利人追訴之風險。
+  4. **屆時的解法（二選一）**：
+     - (a) 付費升級 LimeZu 完整版，**US$1.50 起**（name-your-own-price 最低價，約 ¥220 / RM 7）→ 取得 CC-BY 商用授權，需在產品內標註連結至 LimeZu itch.io 頁面；或
+     - (b) 全面替換為 CC0 素材（如 [Donarg Office Interior Tileset](https://donarg.itch.io/officetileset)、[Kenney](https://kenney.nl)、[OpenGameArt CC0](https://opengameart.org/content/cc0-tiles-tilesets)），CC0 可商用、可修改、無需標註。
+  5. **本決策修訂既有決策**：
+     - **修訂 Decision 005**：原文「本專案所有美術資產必須為自行繪製」→ 放寬為「本專案美術資產得使用**具備合法授權**之第三方素材，或自行繪製；但**不得直接複製 MetaLife 的美術資產、商標與配色**」。禁止抄襲 MetaLife 本身的規定**維持不變且依然有效**。
+     - **推翻 Decision 007 第 3 點**：原文「圖形不得再用像素風」→ **作廢**。該條係基於 2026-08-30 社長對「向量幾何圖形版本」的不滿而訂立，但社長真正的訴求始終是「要像 MetaLife」，而 MetaLife 本身即為像素風。此後 Meta Office 視覺方向**回歸 16-bit 像素風**。
+
+---
+
 ### Decision: Mandatory Automatic Git Pull on Start & Git Push on End (開局必 Pull 收工必 Push 鋼鐵憲法)
 - **Status**: APPROVED & MANDATORY
 - **Date**: 2026-09-02

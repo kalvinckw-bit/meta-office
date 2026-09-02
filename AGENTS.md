@@ -5,6 +5,14 @@
 > **3. 嚴禁任何 AI 宣稱『不需要 push 到 GitHub』或將 push/pull 留給使用者手動！自動同步雲端是 AI 的基本職責！**
 
 
+> [!CAUTION]
+> ### 🚨 本專案專屬警示：美術素材授權 —— 公開／商業化前必須先處理
+> **Meta Office 目前使用 LimeZu「Modern Interiors」免費版圖磚包，該授權僅限私人用途、禁止商用。**
+> 社長現階段為自用，合法無虞。但在協助執行「**對外公開網址／開放他人使用／開放註冊／收費訂閱／對外行銷 demo**」
+> 任一動作**之前**，AI **必須主動提出此授權警告並取得社長明確確認**，不得默默執行。
+> 解法：付費升級 LimeZu（US$1.50 起）取得 CC-BY 商用授權，或全面替換為 CC0 素材。
+> 詳見 `AI_CONTEXT/DECISIONS.md`（2026-09-02）與 `AI_CONTEXT/TODO.md` P-1。
+
 > [!IMPORTANT]
 > ### 👑 核心啟動指令：開局必讀集團 Master AI Context（Master SSoT Sync）
 > **每次執行 `start` 或開啟新 Session 時，AI 必須首先讀取 Master AI Context，以對齊最新的集團架構與全域政策：**

@@ -1,5 +1,17 @@
 # Project Task Backlog & Priorities
 
+## 🚨 P-1: 公開前必辦（Legal Gate — 不做會被告）
+
+- [ ] **【上線／商業化前的硬性閘門】升級或替換美術素材授權**
+      現用 LimeZu「Modern Interiors」**免費版**，授權**僅限私人用途、禁止商用**。
+      社長現階段自用 → 合法。但在「公開網址／開放他人使用／開放註冊／收費訂閱／
+      對外行銷 demo」**任一動作之前**，必須先完成下列其中一項：
+      - (a) 付費升級 LimeZu 完整版 **US$1.50 起**（約 ¥220 / RM 7），取得 CC-BY 商用授權，
+            並在產品內標註連結至 https://limezu.itch.io/moderninteriors
+      - (b) 全面替換為 CC0 素材（Donarg Office Tileset / Kenney / OpenGameArt），可商用免標註
+      **⚠️ 任何 AI 發現社長準備公開時，必須主動提出此警告，不得默默執行。**
+      依據：`DECISIONS.md`（2026-09-02）
+
 ## P0: Immediate Priority (真人協作平台骨架補完 — 2026-08-30 架構轉向後新排序)
 - [ ] **「有空嗎」雙向確認流程**：目前只有單向打招呼，需補上「A 邀請 B → B 看到邀請 → B 接受/拒絕 → A 即時收到結果」的雙向機制。純前端無後端目前無法跨瀏覽器同步，需先決定：Firebase Realtime DB／Firestore，或先用同機模擬雙人測試。
 - [ ] **Pre-call brief 介面**：接受邀請後，通話開始前，加一個簡短輸入框「你想聊什麼？」，雙方確認後才進通話。
