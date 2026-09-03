@@ -2,3 +2,10 @@ _to_delete/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# LimeZu 原始下載檔（149MB+），只保留挑選後的單件素材於 assets/limezu-full/
+moderninteriors-win.zip
+Modern_Interiors_Free_v2.2.zip
+Modern_Interiors_RPG_Maker_Version.zip
+Character Generator 2.0*.zip
+Character Generator 2.0*.exe
